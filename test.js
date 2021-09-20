@@ -1,7 +1,7 @@
 function zeroPad(number, label) {
   let numberString = String(number);
-  while (numberString < 3) {
-    numberString = "0" + number;
+  while (numberString.length < 3) {
+    numberString = "0" + numberString;
   }
   console.log(`${numberString} ${label}`);
 }
