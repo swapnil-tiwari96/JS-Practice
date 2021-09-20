@@ -1,15 +1,15 @@
-function zeroPad(number, label) {
-  let numberString = String(number);
-  while (numberString.length < 3) {
-    numberString = "0" + numberString;
+function zeroPad(number, width) {
+  let string = String(number);
+  while (string.length < width) {
+    string = "0" + string;
   }
-  console.log(`${numberString} ${label}`);
+  return string;
 }
 
-function animals(cows, pigs, chickens) {
-  zeroPad(cows, "Cows");
-  zeroPad(pigs, "Pigs");
-  zeroPad(chickens, "Chickens");
+function printFarmInventory(cows, chickens, pigs) {
+  console.log(`${zeroPad(cows, 3)} Cows`);
+  console.log(`${zeroPad(chickens, 3)} Chickens`);
+  console.log(`${zeroPad(pigs, 3)} Pigs`);
 }
 
-console.log(animals(7, 11, 13));
+printFarmInventory(7, 16, 3);
