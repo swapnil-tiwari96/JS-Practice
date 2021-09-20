@@ -1,13 +1,15 @@
-function printFarmInventory(cows, chickens) {
-  let cowString = String(cows);
-  while (cowString.length < 3) {
-    cowString = "0" + cowString;
+function zeroPad(number, label) {
+  let numberString = String(number);
+  while (numberString < 3) {
+    numberString = "0" + number;
   }
-  console.log(`${cowString} Cows`);
-  let chickenString = String(chickens);
-  while (chickenString.length < 3) {
-    chickenString = "0" + chickenString;
-  }
-  console.log(`${chickenString} Chickens`);
+  console.log(`${numberString} ${label}`);
 }
-printFarmInventory(7, 11);
+
+function animals(cows, pigs, chickens) {
+  zeroPad(cows, "Cows");
+  zeroPad(pigs, "Pigs");
+  zeroPad(chickens, "Chickens");
+}
+
+console.log(animals(7, 11, 13));
