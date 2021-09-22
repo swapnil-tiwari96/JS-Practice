@@ -1,24 +1,11 @@
-let journal = [
-  {
-    events: ["work", "touched tree", "pizza", "running", "television"],
-    squirrel: false,
-  },
-  {
-    events: [
-      "work",
-      "ice cream",
-      "cauliflower",
-      "lasagna",
-      "touched tree",
-      "brushed teeth",
-    ],
-    squirrel: false,
-  },
-  {
-    events: ["weekend", "cycling", "break", "peanuts", "beer"],
-    squirrel: true,
-  },
-  /* and so on... */
-];
+function min(...numbers) {
+  let result = Infinity;
+  for (let number of numbers) {
+    if (number < result) {
+      result = number;
+    }
+  }
+  return result;
+}
 
-console.log(typeof journal);
+console.log(min(-2, 1, -9, -6));
