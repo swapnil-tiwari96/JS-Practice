@@ -17,6 +17,3 @@ function reverseSame(array1) {
 }
 console.log(reverseArray(array1));
 console.log(reverseSame(array1));
-console.log(array1.length - 1);
-console.log(array1.length);
-console.log(Math.floor(array1.length / 2));
