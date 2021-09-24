@@ -1,11 +1,8 @@
-function min(...numbers) {
-  let result = Infinity;
-  for (let number of numbers) {
-    if (number < result) {
-      result = number;
-    }
-  }
-  return result;
-}
+let rabbit = {};
+rabbit.speak = function (line) {
+  console.log(`The rabbit says '${line}'`);
+};
+rabbit.music = ["rock", "pop", "hip-hop"];
 
-console.log(min(-2, 1, -9, -6));
+rabbit.speak("I'm alive.");
+console.log(rabbit);
