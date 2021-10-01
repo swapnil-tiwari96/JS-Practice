@@ -14,7 +14,7 @@ function sumofRange(start, end, step = start > end ? -1 : 1) {
   console.log("Sum is " + sum);
 }
 
-// sumofRange(10, 1);
-// sumofRange(1, 10);
+sumofRange(10, 1);
+sumofRange(1, 10);
 sumofRange(10, 1, -2);
 sumofRange(1, 10, 2);
