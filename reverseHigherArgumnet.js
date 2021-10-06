@@ -1,4 +1,5 @@
 let array = [1, 2, 3, 4, 5];
+let array1 = [1, 2, 3, 4, 5];
 
 function modification(array, modifier) {
   modifier(array);
@@ -12,4 +13,11 @@ modification(array, (array) => {
   }
 });
 
+modification(array1, (array1) => {
+  for (let i = 0; i < array1.length; i++) {
+    array1[i] = array1[i] + 1;
+  }
+});
+
 console.log(array);
+console.log(array1);
