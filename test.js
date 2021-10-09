@@ -1,12 +1,11 @@
-strings = "a";
-//console.log(strings.charCodeAt(0));
+let strings = "Hello World";
 
-function indexOf(char) {
-  return char.charCodeAt(0) - 97;
+function countChar(strings) {
+  let dict = {};
+  for (let i of strings) {
+    dict[i] = (dict[i] || 0) + 1;
+  }
+  return dict;
 }
 
-console.log(indexOf("c"));
-console.log(indexOf("z"));
-
-let variable = String.fromCharCode(97);
-console.log(variable);
+console.log(countChar(strings));
