@@ -1,13 +1,12 @@
-let stringOf = "🌹🐉";
-for (let char of stringOf) {
-  console.log(`The of operator: ${char}`);
+strings = "a";
+//console.log(strings.charCodeAt(0));
+
+function indexOf(char) {
+  return char.charCodeAt(0) - 97;
 }
 
-for (let i in stringOf) {
-  console.log(`The in operator: ${i}`);
-}
+console.log(indexOf("c"));
+console.log(indexOf("z"));
 
-console.log(stringOf.charCodeAt(0));
-console.log(stringOf.codePointAt(0));
-console.log(stringOf.charCodeAt(1));
-console.log(stringOf.codePointAt(1));
+let variable = String.fromCharCode(97);
+console.log(variable);
