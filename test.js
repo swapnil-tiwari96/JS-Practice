@@ -1,17 +1,13 @@
-let protoRabbit = {
-  speak(line) {
-    console.log(`The ${this.type} rabbit says '${line}'`);
-  },
-};
-let killerRabbit = Object.create(protoRabbit);
-killerRabbit.type = "killer";
-killerRabbit.speak("SKREEEE!");
+let stringOf = "🌹🐉";
+for (let char of stringOf) {
+  console.log(`The of operator: ${char}`);
+}
 
-// function Rabbit(type) {
-//   this.type = type;
-// }
-// Rabbit.prototype.speak = function(line) {
-//   console.log(`The ${this.type} rabbit says '${line}'`);
-// };
+for (let i in stringOf) {
+  console.log(`The in operator: ${i}`);
+}
 
-// let weirdRabbit = new Rabbit("weird");
+console.log(stringOf.charCodeAt(0));
+console.log(stringOf.codePointAt(0));
+console.log(stringOf.charCodeAt(1));
+console.log(stringOf.codePointAt(1));
