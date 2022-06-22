@@ -1,5 +1,1 @@
-let a, b;
-
-function calculator(a, b, ()=> {
- let 
-}); 
+var a = []; a.unshift(5); a.unshift(22); a.shift(); a.unshift(3, [4, 5]); a.shift(); a.shift(); a.shift();
